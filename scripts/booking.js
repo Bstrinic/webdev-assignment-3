@@ -84,4 +84,4 @@ function recalculateCost() {
     console.log(numberOfDays);
     console.log(totalCost);
     calculatedOutput$.innerHTML = totalCost
-}
+};
