@@ -45,18 +45,31 @@ document.getElementById("clear-button").addEventListener("click", () => {
     recalculateCost();
 });
 
-
-
-
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
 
+const halfDayButton = document.getElementById("half");
+const fullDayButton = document.getElementById("full");
 
+halfDayButton.addEventListener("click", () => {
+    costPerDay = 20;
 
+    halfDayButton.classList.add("clicked");
+    fullDayButton.classList.remove("clicked");
+
+    recalculateCost
+});
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
 
+fullDayButton.addEventListener("click", () => {
+    costPerDay = 35;
 
+    fullDayButton.classList.add("clicked");
+    halfDayButton.classList.remove("clicked");
+
+    recalculateCost();
+});
 
 
 
