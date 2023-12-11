@@ -38,7 +38,7 @@ dayButtons$.forEach((dayButton) => {
 
 document.getElementById("clear-button").addEventListener("click", () => {
     dayButtons$.forEach(function (dayButton) {
-        dayButton,classList.remove("clicked");
+        dayButton.classList.remove("clicked");
     });
     numberOfDays = 0;
 
@@ -83,5 +83,5 @@ function recalculateCost() {
     console.log(costPerDay);
     console.log(numberOfDays);
     console.log(totalCost);
-    calculatedOutput$.innerHTML = totalCost
+    calculatedOutput$.innerHTML = totalCost;
 };
