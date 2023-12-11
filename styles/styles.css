@@ -222,6 +222,45 @@ body {
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+    body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 24px;
+        font-size: 16px;
+        margin: 0;
+    }
 
+    #contact-page {
+        max-width: 600px;
+        margin: 0;
+        padding: 20px;
+    }
 
+    form {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    label {
+        width: 150px;
+        text-align: right;
+        margin-right: 24px;
+    }
+
+    input, textarea, button {
+        padding: 8px;
+        border: 1px solid black;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    button {
+        margin-top: 24px;
+    }
