@@ -71,9 +71,17 @@ fullDayButton.addEventListener("click", () => {
     recalculateCost();
 });
 
-
-
 /********* calculate *********/
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 
+const calculatedOutput$ = document.getElementById("calculated-cost");
 
+//  Single Responsibility Principle => We need a class to recalculate the total cost 
+
+function recalculateCost() {
+    totalCost = costPerDay * numberOfDays;
+    console.log(costPerDay);
+    console.log(numberOfDays);
+    console.log(totalCost);
+    calculatedOutput$.innerHTML = totalCost
+}
