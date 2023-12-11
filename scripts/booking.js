@@ -19,7 +19,7 @@ const dayButtons$ = document.querySelectorAll(".day-selector li");
 dayButtons$.forEach((dayButton) => {
     dayButton.addEventListener("click", () => {
         //if the class list is already present => subtract value from totalCost
-        if (dayButton,classList.contains("clicked")) {
+        if (dayButton.classList.contains("clicked")) {
             numberOfDays -= 1;
         }   else {
             numberOfDays += 1;
@@ -57,7 +57,7 @@ halfDayButton.addEventListener("click", () => {
     halfDayButton.classList.add("clicked");
     fullDayButton.classList.remove("clicked");
 
-    recalculateCost
+    recalculateCost()
 });
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
